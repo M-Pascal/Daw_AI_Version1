@@ -1,0 +1,20 @@
+[
+  {
+    "id": "hiv",
+    "name": "HIV",
+    "fullName": "Human Immunodeficiency Virus",
+    "description": "Monthly newly reported HIV cases across public hospitals."
+  },
+  {
+    "id": "tb",
+    "name": "TB",
+    "fullName": "Tuberculosis",
+    "description": "Monthly notified TB cases across public hospitals."
+  },
+  {
+    "id": "malaria",
+    "name": "Malaria",
+    "fullName": "Malaria",
+    "description": "Monthly confirmed malaria cases across public hospitals."
+  }
+]

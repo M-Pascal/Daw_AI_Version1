@@ -1,0 +1,82 @@
+[
+  {
+    "id": "nairobi",
+    "name": "Nairobi",
+    "mapRect": {
+      "x": 260,
+      "y": 320,
+      "w": 90,
+      "h": 60
+    }
+  },
+  {
+    "id": "central",
+    "name": "Central",
+    "mapRect": {
+      "x": 250,
+      "y": 210,
+      "w": 140,
+      "h": 100
+    }
+  },
+  {
+    "id": "coast",
+    "name": "Coast",
+    "mapRect": {
+      "x": 300,
+      "y": 525,
+      "w": 170,
+      "h": 85
+    }
+  },
+  {
+    "id": "eastern",
+    "name": "Eastern",
+    "mapRect": {
+      "x": 250,
+      "y": 390,
+      "w": 200,
+      "h": 125
+    }
+  },
+  {
+    "id": "northEastern",
+    "name": "North Eastern",
+    "mapRect": {
+      "x": 260,
+      "y": 20,
+      "w": 200,
+      "h": 180
+    }
+  },
+  {
+    "id": "nyanza",
+    "name": "Nyanza",
+    "mapRect": {
+      "x": 10,
+      "y": 270,
+      "w": 90,
+      "h": 140
+    }
+  },
+  {
+    "id": "riftValley",
+    "name": "Rift Valley",
+    "mapRect": {
+      "x": 110,
+      "y": 30,
+      "w": 130,
+      "h": 470
+    }
+  },
+  {
+    "id": "western",
+    "name": "Western",
+    "mapRect": {
+      "x": 10,
+      "y": 150,
+      "w": 90,
+      "h": 120
+    }
+  }
+]
