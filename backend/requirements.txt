@@ -1,0 +1,5 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+# Only imported once MODEL_DIR has real boosters (see predictor.py); still
+# listed here so the live-inference path works the moment artifacts land.
+lightgbm>=4.3

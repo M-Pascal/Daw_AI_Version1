@@ -1,0 +1,20 @@
+# Next.js frontend
+frontnd/node_modules/
+frontnd/.next/
+frontnd/out/
+frontnd/.env.local
+frontnd/.env*.local
+frontnd/*.tsbuildinfo
+
+# Python backend
+__pycache__/
+*.pyc
+backend/.venv/
+backend/venv/
+backend/.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store

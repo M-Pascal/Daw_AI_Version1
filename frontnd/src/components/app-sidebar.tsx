@@ -4,7 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { LayoutDashboard, LineChart, LogOut, Menu } from "lucide-react";
+import { Activity, LayoutDashboard, LineChart, LogOut, Menu } from "lucide-react";
 import { Logo } from "@/components/logo";
 import { logoutAction } from "@/lib/actions/auth-actions";
 import { cn } from "@/lib/utils";
@@ -13,11 +13,18 @@ import logoMapImage from "../../public/logo-map.png";
 const NAV_LINKS = [
   { href: "/overview", label: "Overview", Icon: LayoutDashboard },
   { href: "/forecast", label: "Disease Forecast", Icon: LineChart },
+  { href: "/forecast/live", label: "Live Model Forecast", Icon: Activity },
 ];
 
 export function AppSidebar({ fullName }: { fullName: string }) {
   const pathname = usePathname();
   const [collapsed, setCollapsed] = useState(false);
+
+  // Nested routes (e.g. "/forecast/live" under "/forecast") share a prefix,
+  // so only the longest matching link should light up rather than both.
+  const activeHref = NAV_LINKS.map((l) => l.href)
+    .filter((href) => pathname?.startsWith(href))
+    .sort((a, b) => b.length - a.length)[0];
 
   return (
     <>
@@ -58,7 +65,7 @@ export function AppSidebar({ fullName }: { fullName: string }) {
 
         <nav className="flex-1 space-y-1 px-3 py-4">
           {NAV_LINKS.map(({ href, label, Icon }) => {
-            const active = pathname?.startsWith(href);
+            const active = href === activeHref;
             return (
               <Link
                 key={href}
